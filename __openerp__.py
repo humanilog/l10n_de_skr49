@@ -6,7 +6,7 @@
   'category': 'Localization/Account Charts',
   'description': """
 Dieses Modul beinhaltet einen deutschen Kontenrahmen für die HLO basierend auf dem SKR49.
-==============================================================================
+=========================================================================================
 
 German accounting chart and localization for the HLO.
   """,
