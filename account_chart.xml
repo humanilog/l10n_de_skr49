@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data noupdate="1">
-    <record id="account_0705" model="account.account.template">
+    <record id="account_0659" model="account.account.template">
       <field name="name">Geldtransit</field>
       <field name="code">0705</field>
       <field eval="True" name="reconcile"/>
@@ -10,16 +10,9 @@
     <record id="l10n_chart_de_skr49_hlo" model="account.chart.template">
       <field name="name">Deutscher Kontenplan SKR49 HLO</field>
       <field name="currency_id" ref="base.EUR"/>
-      <field name="transfer_account_id" ref="account_0705"/>
+      <field name="transfer_account_id" ref="account_0659"/>
     </record>
-    <record id="account_0705" model="account.account.template">
-      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
-    </record>
-    <record id="account_0002" model="account.account.template">
-      <field name="name">Ingangsetzungs- und Erweiterungsaufwand</field>
-      <field name="code">0002</field>
-      <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_start_up_expenses"/>
+    <record id="account_0659" model="account.account.template">
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_0010" model="account.account.template">
@@ -543,7 +536,7 @@
     <record id="account_0650" model="account.account.template">
       <field name="name">Forderungen aus Lieferungen und Leistungen</field>
       <field name="code">0650</field>
-      <field eval="False" name="reconcile"/>
+      <field eval="True" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
@@ -638,6 +631,83 @@
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_0745" model="account.account.template">
+      <field name="name">Umsatzsteuerforderungen laufendes Jahr</field>
+      <field name="code">0745</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0746" model="account.account.template">
+      <field name="name">Umsatzsteuerforderungen</field>
+      <field name="code">0746</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0747" model="account.account.template">
+      <field name="name">Umsatzsteuerforderungen Vorjahr</field>
+      <field name="code">0747</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0748" model="account.account.template">
+      <field name="name">Umsatzsteuerforderungen frühere Jahre</field>
+      <field name="code">0748</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0755" model="account.account.template">
+      <field name="name">Zurückzuzahlende Vorsteuer gem. § 15a Abs. 1 UStG, unbewegliche Wirtschaftsgüter</field>
+      <field name="code">0755</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0756" model="account.account.template">
+      <field name="name">Zurückzuzahlende Vorsteuer, § 15a Abs. 2 UStG</field>
+      <field name="code">0756</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0757" model="account.account.template">
+      <field name="name">Zurückzuzahlende Vorsteuer, § 15a Abs. 1 UStG, bewegliche Wirtschaftsgüter</field>
+      <field name="code">0757</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0758" model="account.account.template">
+      <field name="name">Nachträglich abziehbare Vorsteuer, § 15a Abs. 2 UStG</field>
+      <field name="code">0758</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0759" model="account.account.template">
+      <field name="name">Nachträglich abziehbare Vorsteuer gem. § 15a Abs. 1 UStG, unbewegliche Wirtschaftsgüter</field>
+      <field name="code">0759</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0760" model="account.account.template">
+      <field name="name">Nachträglich abziehbare Vorsteuer, § 15a Abs. 1 UStG, bewegliche Wirtschaftsgüter</field>
+      <field name="code">0760</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0761" model="account.account.template">
+      <field name="name">Abziehbare Vorsteuer aus der Auslagerung von Gegenständen aus einem Umsatzsteuerlager</field>
+      <field name="code">0761</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_0770" model="account.account.template">
       <field name="name">Abziehbare Vorsteuer</field>
       <field name="code">0770</field>
@@ -701,6 +771,13 @@
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_0811" model="account.account.template">
+      <field name="name">Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 19 %</field>
+      <field name="code">0811</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_0815" model="account.account.template">
       <field name="name">Abziehbare Vorsteuer innergemeinschaftlicher Erwerb Neufahrzeuge ohne USt-ID</field>
       <field name="code">0815</field>
@@ -725,6 +802,13 @@
     <record id="account_0830" model="account.account.template">
       <field name="name">Aufzuteilende Vorsteuer 7 %</field>
       <field name="code">0830</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0838" model="account.account.template">
+      <field name="name">Aufzuteilende Vorsteuer nach §§ 13a/13b UStG 19 %</field>
+      <field name="code">0838</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -757,6 +841,13 @@
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_0844" model="account.account.template">
+      <field name="name">Aufzuteilende Vorsteuer aus innergemeinschaftlichem Erwerb 19 %</field>
+      <field name="code">0844</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_0845" model="account.account.template">
       <field name="name">Aufzuteilende Vorsteuer Ausgaben B4000-8000</field>
       <field name="code">0845</field>
@@ -779,7 +870,7 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_0853" model="account.account.template">
-      <field name="name">Vorsteuer im Folgejahr abziehbar</field>
+      <field name="name">Vorsteuer in Folgeperiode/im Folgejahr abziehbar</field>
       <field name="code">0853</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
@@ -788,6 +879,20 @@
     <record id="account_0855" model="account.account.template">
       <field name="name">Auflösung Vorsteuer aus Vorjahr § 4/3 EStG</field>
       <field name="code">0855</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0857" model="account.account.template">
+      <field name="name">Vorsteuer aus Investitionen § 4 Abs. 3 EStG</field>
+      <field name="code">0857</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_0859" model="account.account.template">
+      <field name="name">Gegenkonto für Vorsteuer nach Durchschnittssätzen für § 4 Abs. 3 EStG</field>
+      <field name="code">0859</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_assets"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -936,7 +1041,7 @@
       <field name="name">Rechnungsabgrenzungsposten aktiv</field>
       <field name="code">0990</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_prepaid_expenses"/>
+      <field name="user_type_id" ref="data_account_type_prepaid_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1000" model="account.account.template">
@@ -975,14 +1080,14 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1012" model="account.account.template">
-      <field name="name">Rücklagen ideeller Bereich bis 2012</field>
+      <field name="name">Rücklagen ideeller Bereich bis 2022</field>
       <field name="code">1012</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1013" model="account.account.template">
-      <field name="name">Rücklagen ideeller Bereich bis 2013</field>
+      <field name="name">Rücklagen ideeller Bereich bis 2023</field>
       <field name="code">1013</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
@@ -1045,14 +1150,14 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1022" model="account.account.template">
-      <field name="name">Rücklagen Vermögensverwaltung bis 2012</field>
+      <field name="name">Rücklagen Vermögensverwaltung bis 2022</field>
       <field name="code">1022</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1023" model="account.account.template">
-      <field name="name">Rücklagen Vermögensverwaltung bis 2013</field>
+      <field name="name">Rücklagen Vermögensverwaltung bis 2023</field>
       <field name="code">1023</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
@@ -1115,14 +1220,14 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1032" model="account.account.template">
-      <field name="name">Rücklagen Zweckbetriebe bis 2012</field>
+      <field name="name">Rücklagen Zweckbetriebe bis 2022</field>
       <field name="code">1032</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1033" model="account.account.template">
-      <field name="name">Rücklagen Zweckbetriebe bis 2013</field>
+      <field name="name">Rücklagen Zweckbetriebe bis 2023</field>
       <field name="code">1033</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
@@ -1185,14 +1290,14 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1042" model="account.account.template">
-      <field name="name">Rücklagen Geschäftsbetriebe bis 2012</field>
+      <field name="name">Rücklagen Geschäftsbetriebe bis 2022</field>
       <field name="code">1042</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1043" model="account.account.template">
-      <field name="name">Rücklagen Geschäftsbetriebe bis 2013</field>
+      <field name="name">Rücklagen Geschäftsbetriebe bis 2023</field>
       <field name="code">1043</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_equity"/>
@@ -1363,42 +1468,42 @@
       <field name="name">Sonderposten mit Rücklageanteil</field>
       <field name="code">1180</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_reserve_items"/>
+      <field name="user_type_id" ref="data_account_type_special_reserve_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1190" model="account.account.template">
       <field name="name">Gebundene Mittel für Förderzwecke</field>
       <field name="code">1190</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_reserve_items"/>
+      <field name="user_type_id" ref="data_account_type_special_reserve_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1195" model="account.account.template">
       <field name="name">Sonderposten für noch nicht Aufwandswirksam verwendete Spenden</field>
       <field name="code">1195</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_reserve_items"/>
+      <field name="user_type_id" ref="data_account_type_special_reserve_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_1200" model="account.account.template">
+    <record id="account_1200 " model="account.account.template">
       <field name="name">Pensionsrückstellungen</field>
       <field name="code">1200</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_accruals"/>
+      <field name="user_type_id" ref="data_account_type_accruals"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1210" model="account.account.template">
       <field name="name">Steuerrückstellungen</field>
       <field name="code">1210</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_accruals"/>
+      <field name="user_type_id" ref="data_account_type_accruals"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1220" model="account.account.template">
       <field name="name">Sonstige Rückstellungen</field>
       <field name="code">1220</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_accruals"/>
+      <field name="user_type_id" ref="data_account_type_accruals"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_1300" model="account.account.template">
@@ -1432,7 +1537,7 @@
     <record id="account_1340" model="account.account.template">
       <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen</field>
       <field name="code">1340</field>
-      <field eval="False" name="reconcile"/>
+      <field eval="True" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
@@ -1485,7 +1590,7 @@
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_1395" model="account.account.template">
+    <record id="account_1395 " model="account.account.template">
       <field name="name">Verbindlichkeiten aus bedingt rückzahlungspflichtigen Spenden</field>
       <field name="code">1395</field>
       <field eval="False" name="reconcile"/>
@@ -1555,7 +1660,7 @@
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_1825" model="account.account.template">
+    <record id="account_1825 " model="account.account.template">
       <field name="name">Nettoerlöse 19 %</field>
       <field name="code">1825</field>
       <field eval="False" name="reconcile"/>
@@ -1639,6 +1744,13 @@
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_1869" model="account.account.template">
+      <field name="name">Umsatzsteuer aus im anderen EU-Land steuerpflichtigen elektronischen Dienstleistungen</field>
+      <field name="code">1869</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_1870" model="account.account.template">
       <field name="name">Umsatzsteuer aus im anderen EU-Land steuerpflichtigen Lieferungen</field>
       <field name="code">1870</field>
@@ -1656,6 +1768,13 @@
     <record id="account_1872" model="account.account.template">
       <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug</field>
       <field name="code">1872</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_1873" model="account.account.template">
+      <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb 19 %</field>
+      <field name="code">1873</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -1688,6 +1807,13 @@
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_1896" model="account.account.template">
+      <field name="name">Umsatzsteuer nicht fällig aus im Inland steuerpflichtigen EU-Lieferungen 19 %</field>
+      <field name="code">1896</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_1901" model="account.account.template">
       <field name="name">Umsatzsteuer nach § 13b UStG</field>
       <field name="code">1901</field>
@@ -1698,6 +1824,13 @@
     <record id="account_1902" model="account.account.template">
       <field name="name">Umsatzsteuer nach § 13b UStG, 19 %</field>
       <field name="code">1902</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_1905" model="account.account.template">
+      <field name="name">Umsatzsteuer aus der Auslagerung von Gegenständen aus einem Umsatzsteuerlager</field>
+      <field name="code">1905</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -1744,6 +1877,27 @@
       <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_1916" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus Umsatzsteuer1</field>
+      <field name="code">1916</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_1918" model="account.account.template">
+      <field name="name">Umsatzsteuer in Folgeperiode fällig (§§ 13 Abs. 1 Nr. 6, 13b Abs. 2 UStG)</field>
+      <field name="code">1918</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_1919" model="account.account.template">
+      <field name="name">Umsatzsteuer Vorjahr</field>
+      <field name="code">1919</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_1920" model="account.account.template">
       <field name="name">Umsatzsteuer laufendes Jahr</field>
       <field name="code">1920</field>
@@ -1762,7 +1916,7 @@
       <field name="name">Rechnungsabgrenzungsposten passiv</field>
       <field name="code">1990</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_deferred_income"/>
+      <field name="user_type_id" ref="data_account_type_deferred_income"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_2000" model="account.account.template">
@@ -2171,6 +2325,13 @@
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_2904" model="account.account.template">
+      <field name="name">Anteilige Umsatzsteuerzahlungen</field>
+      <field name="code">2904</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_expenses"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_2930" model="account.account.template">
       <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7 % Ust</field>
       <field name="code">2930</field>
@@ -2192,16 +2353,16 @@
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_2945" model="account.account.template">
-      <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 19 % Ust</field>
-      <field name="code">2945</field>
+    <record id="account_2940" model="account.account.template">
+      <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7 % USt</field>
+      <field name="code">2940</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_2940" model="account.account.template">
-      <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7 % USt</field>
-      <field name="code">2940</field>
+    <record id="account_2945" model="account.account.template">
+      <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 19 % Ust</field>
+      <field name="code">2945</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -2217,672 +2378,672 @@
       <field name="name">Steuerneutrale Einnahmen Bereich 2000</field>
       <field name="code">3200</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3210" model="account.account.template">
       <field name="name">Schenkungen</field>
       <field name="code">3210</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3211" model="account.account.template">
       <field name="name">Erbschaften</field>
       <field name="code">3211</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3212" model="account.account.template">
       <field name="name">Vermächtnisse</field>
       <field name="code">3212</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3215" model="account.account.template">
       <field name="name">Sonstige Einnahmen</field>
       <field name="code">3215</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3220" model="account.account.template">
       <field name="name">Erhaltene Spenden / Zuwendungen</field>
       <field name="code">3220</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_3221" model="account.account.template">
+    <record id="account_3221 " model="account.account.template">
       <field name="name">Sonstige Einnahmen</field>
       <field name="code">3221</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3223" model="account.account.template">
       <field name="name">Geldzuwendungen ohne Zuwendungsbestätigung</field>
       <field name="code">3223</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3225" model="account.account.template">
       <field name="name">Sachzuwendungen gegen Zuwendungsbestätigung</field>
       <field name="code">3225</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3227" model="account.account.template">
       <field name="name">Sachzuwendungen ohne Zuwendungsbestätigung</field>
       <field name="code">3227</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
-    <record id="account_3230" model="account.account.template">
+    <record id="account_3230 " model="account.account.template">
       <field name="name">Sachzuwendungen ohne Zuwendungsbestätigung</field>
       <field name="code">3230</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3232" model="account.account.template">
       <field name="name">Aufwandszuwendungen ohne Zuwendungsbestätigung</field>
       <field name="code">3232</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3240" model="account.account.template">
       <field name="name">Ertrag aus Spendenverbrauch</field>
       <field name="code">3240</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3250" model="account.account.template">
       <field name="name">Nicht abziehbare Ausgaben Bereich 2000</field>
       <field name="code">3250</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3251" model="account.account.template">
       <field name="name">Gezahlte Spenden/Zuwendungen</field>
       <field name="code">3251</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3252" model="account.account.template">
       <field name="name">Hingegebene Sachspenden/-zuwendungen</field>
       <field name="code">3252</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3260" model="account.account.template">
       <field name="name">Erbschaft-, Schenkungsteuer</field>
       <field name="code">3260</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3400" model="account.account.template">
       <field name="name">Steuerneutrale Einnahmen Bereich 4000</field>
       <field name="code">3400</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3401" model="account.account.template">
       <field name="name">Investitionszulage</field>
       <field name="code">3401</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3402" model="account.account.template">
       <field name="name">Erstattete Kapitalertragsteuer</field>
       <field name="code">3402</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3403" model="account.account.template">
       <field name="name">Erstattete und vergütete Körperschaftsteuer</field>
       <field name="code">3403</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3404" model="account.account.template">
       <field name="name">Solidaritätszuschlagerstattungen für Vorjahre</field>
       <field name="code">3404</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3410" model="account.account.template">
       <field name="name">Nicht steuerbare Kursgewinne Wertpapiere (über 12 Monate) 0 % Ust</field>
       <field name="code">3410</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3415" model="account.account.template">
       <field name="name">Ertrag aus pauschaler Vorsteuer § 23a UStG</field>
       <field name="code">3415</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3420" model="account.account.template">
       <field name="name">Verkaufserlöse Vermögensverwaltung</field>
       <field name="code">3420</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3421" model="account.account.template">
       <field name="name">Verkaufserlöse Anlagevermögen 0 % USt</field>
       <field name="code">3421</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3422" model="account.account.template">
       <field name="name">Verkaufserlöse Anlagevermögen 7 % USt</field>
       <field name="code">3422</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3423" model="account.account.template">
       <field name="name">Verkaufserlöse Anlagevermögen 19 % USt</field>
       <field name="code">3423</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3424" model="account.account.template">
       <field name="name">Verkaufserlöse Wertpapiere</field>
       <field name="code">3424</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3450" model="account.account.template">
       <field name="name">Nicht abziehbare Ausgaben Bereich 4000</field>
       <field name="code">3450</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3451" model="account.account.template">
       <field name="name">Abgezogene Kapitalertragsteuer</field>
       <field name="code">3451</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3452" model="account.account.template">
       <field name="name">Abgezogene Körperschaftsteuer</field>
       <field name="code">3452</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3453" model="account.account.template">
       <field name="name">Solidaritätszuschlag zur KSt</field>
       <field name="code">3453</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3500" model="account.account.template">
       <field name="name">Steuerneutrale Einnahmen Bereich 5000</field>
       <field name="code">3500</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3515" model="account.account.template">
       <field name="name">Ertrag aus pauschaler Vorsteuer § 23a UStG</field>
       <field name="code">3515</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3550" model="account.account.template">
       <field name="name">Nicht abziehbare Ausgaben Bereich 5000</field>
       <field name="code">3550</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3551" model="account.account.template">
       <field name="name">Ausgaben i. S. v. § 4 Abs. 5 EStG</field>
       <field name="code">3551</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3552" model="account.account.template">
       <field name="name">Geschenke nicht abzugsfähig</field>
       <field name="code">3552</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3553" model="account.account.template">
       <field name="name">Nicht abzugsfähige Bewirtungskosten</field>
       <field name="code">3553</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3590" model="account.account.template">
       <field name="name">Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG</field>
       <field name="code">3590</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3600" model="account.account.template">
       <field name="name">Steuerneutrale Einnahmen Bereich 6000</field>
       <field name="code">3600</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3615" model="account.account.template">
       <field name="name">Ertrag aus pauschaler Vorsteuer § 23a UStG</field>
       <field name="code">3615</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3650" model="account.account.template">
       <field name="name">Nicht abziehbare Ausgaben Bereich 6000</field>
       <field name="code">3650</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3651" model="account.account.template">
       <field name="name">Ausgaben i. S. v. § 4 Abs. 5 EStG</field>
       <field name="code">3651</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3652" model="account.account.template">
       <field name="name">Geschenke nicht abzugsfähig</field>
       <field name="code">3652</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3653" model="account.account.template">
       <field name="name">Nicht abzugsfähige Bewirtungskosten</field>
       <field name="code">3653</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3690" model="account.account.template">
       <field name="name">Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG</field>
       <field name="code">3690</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3700" model="account.account.template">
       <field name="name">Steuerneutrale Einnahmen Bereich 7000</field>
       <field name="code">3700</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3701" model="account.account.template">
       <field name="name">Investitionszulage</field>
       <field name="code">3701</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3710" model="account.account.template">
       <field name="name">Steuerfreie Einnahmen zum Verlustausgleich im Teilbereich 7001</field>
       <field name="code">3710</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3711" model="account.account.template">
       <field name="name">Mitglieder-Umlagen zum Verlustausgleich für Teilbereich 7001</field>
       <field name="code">3711</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3712" model="account.account.template">
       <field name="name">Mitglieder-Zuschüsse zum Verlustausgleich für Teilbereich 7001</field>
       <field name="code">3712</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3715" model="account.account.template">
       <field name="name">Ertrag aus pauschaler Vorsteuer § 23a UStG</field>
       <field name="code">3715</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3750" model="account.account.template">
       <field name="name">Nicht abziehbare Ausgaben Bereich 7000</field>
       <field name="code">3750</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3754" model="account.account.template">
       <field name="name">Gewerbesteuer</field>
       <field name="code">3754</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3755" model="account.account.template">
       <field name="name">Körperschaftsteuer</field>
       <field name="code">3755</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3756" model="account.account.template">
       <field name="name">Solidaritätszuschlag zur KSt</field>
       <field name="code">3756</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3770" model="account.account.template">
       <field name="name">Säumnis-/Verspätungszuschläge</field>
       <field name="code">3770</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3780" model="account.account.template">
       <field name="name">Gewährte Spenden/Zuwendungen</field>
       <field name="code">3780</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3781" model="account.account.template">
       <field name="name">Ausgaben i. S. v. § 4 Abs. 5 EStG</field>
       <field name="code">3781</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3782" model="account.account.template">
       <field name="name">Geschenke nicht abzugsfähig</field>
       <field name="code">3782</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3783" model="account.account.template">
       <field name="name">Nicht abzugsfähige Bewirtungskosten</field>
       <field name="code">3783</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3790" model="account.account.template">
       <field name="name">Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG</field>
       <field name="code">3790</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3795" model="account.account.template">
       <field name="name">Aufwand aus Verrechnungsposten (Gegenkonto zu 7518/7520, 7851/7858)</field>
       <field name="code">3795</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3800" model="account.account.template">
       <field name="name">steuerneutrale Einnahmen Bereich 8000</field>
       <field name="code">3800</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3801" model="account.account.template">
       <field name="name">Investitionszulage</field>
       <field name="code">3801</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3815" model="account.account.template">
       <field name="name">Ertrag aus pauschaler Vorsteuer § 23 a UStG</field>
       <field name="code">3815</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3820" model="account.account.template">
       <field name="name">Erhaltene steuerzinsen auf KSt Nicht abziehbare</field>
       <field name="code">3820</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3850" model="account.account.template">
       <field name="name">Nicht abziehb. Ausg. zu Bereich 8000</field>
       <field name="code">3850</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3853" model="account.account.template">
       <field name="name">Gewerbesteuer</field>
       <field name="code">3853</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3854" model="account.account.template">
       <field name="name">Solidaritätszuschlag zur KSt</field>
       <field name="code">3854</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3855" model="account.account.template">
       <field name="name">Körperschaftsteuer</field>
       <field name="code">3855</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3857" model="account.account.template">
       <field name="name">Säumnis-/Verspätungszuschläge</field>
       <field name="code">3857</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3861" model="account.account.template">
       <field name="name">Ausgaben i. S. v. § 4 Abs. 5 EStG</field>
       <field name="code">3861</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3862" model="account.account.template">
       <field name="name">Geschenke nicht abzugsfähig</field>
       <field name="code">3862</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3863" model="account.account.template">
       <field name="name">Nicht abzugsfähige Bewirtungskosten</field>
       <field name="code">3863</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3864" model="account.account.template">
       <field name="name">Gezahlte Zinsen auf hinterzogene steuern</field>
       <field name="code">3864</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3870" model="account.account.template">
       <field name="name">Gezahlte Zinsen gemäß § 233a AO</field>
       <field name="code">3870</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3873" model="account.account.template">
       <field name="name">Gezahlte Aussetzungszinsen KSt</field>
       <field name="code">3873</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3890" model="account.account.template">
       <field name="name">Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG</field>
       <field name="code">3890</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3895" model="account.account.template">
       <field name="name">Aufwand aus Verrechnungsposten (Gegenkonto zu 8158-8166)</field>
       <field name="code">3895</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_income_neutral_items"/>
+      <field name="user_type_id" ref="data_account_type_income_neutral_items"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3950" model="account.account.template">
       <field name="name">Ergebnisvortrag aus dem Vorjahr</field>
       <field name="code">3950</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3953" model="account.account.template">
       <field name="name">Entnahmen aus gebundenen Rücklagen gem. § 62 Abs. 1 Nr. 1 u. 2 AO</field>
       <field name="code">3953</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3955" model="account.account.template">
       <field name="name">Entnahmen aus freien Rücklagen gem.§ 62 Abs. 1 Nr. 3 AO</field>
       <field name="code">3955</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3956" model="account.account.template">
       <field name="name">Entnahmen aus Rücklagen zum Erwerb von Gesellschaftsrechten gem. § 62 Abs. 1 Nr. 4 AO</field>
       <field name="code">3956</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3957" model="account.account.template">
       <field name="name">Entnahmen aus sonstigen Rücklagen</field>
       <field name="code">3957</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3963" model="account.account.template">
       <field name="name">Einstellungen in gebundene Rücklagen gem. § 62 Abs. 1 Nr. 1 u. 2 AO</field>
       <field name="code">3963</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3965" model="account.account.template">
       <field name="name">Einstellungen in freie Rücklagen gem. § 62 Abs. 1 Nr. 3 AO</field>
       <field name="code">3965</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3966" model="account.account.template">
       <field name="name">Einstellungen in Rücklagen zum Erwerb von Gesellschaftsrechten gem. § 62 Abs. 1 Nr. 4 AO</field>
       <field name="code">3966</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3967" model="account.account.template">
       <field name="name">Einstellungen in die sonstigen Rücklagen</field>
       <field name="code">3967</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3970" model="account.account.template">
       <field name="name">Entnahmen aus der Kapitalerhaltungsrücklage</field>
       <field name="code">3970</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3971" model="account.account.template">
       <field name="name">Verminderung des Stiftungskapitals aus realisierten Vermögensumschichtungen</field>
       <field name="code">3971</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3975" model="account.account.template">
       <field name="name">Einstellungen in die Kapitalerhaltungsrücklage</field>
       <field name="code">3975</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3976" model="account.account.template">
       <field name="name">Erhöhung des Stiftungskapitals aus</field>
       <field name="code">3976</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3994" model="account.account.template">
       <field name="name">Entnahmen aus dem Vereinskapital</field>
       <field name="code">3994</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_3996" model="account.account.template">
       <field name="name">Einstellungen in das Vereinskapital</field>
       <field name="code">3996</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_appropriation_bill"/>
+      <field name="user_type_id" ref="data_account_type_appropriation_bill"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_4000" model="account.account.template">
@@ -3074,6 +3235,13 @@
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_4531" model="account.account.template">
+      <field name="name">Sonstige Kosten</field>
+      <field name="code">4531</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_expenses"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_4600" model="account.account.template">
       <field name="name">Anlagenabgänge Restbuchwerte</field>
       <field name="code">4600</field>
@@ -3235,6 +3403,13 @@
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_6045" model="account.account.template">
+      <field name="name">Direkt mit dem Umsatz verbundene Steuern</field>
+      <field name="code">6045</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_6050" model="account.account.template">
       <field name="name">Bestandsveränderung</field>
       <field name="code">6050</field>
@@ -3245,6 +3420,13 @@
     <record id="account_6055" model="account.account.template">
       <field name="name">Andere aktivierte Eigenleistungen</field>
       <field name="code">6055</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_6059" model="account.account.template">
+      <field name="name">Aktivierte Eigenleistungen (den Herstellungskosten zurechenbare Fremdkapitalzinsen)</field>
+      <field name="code">6059</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -3537,7 +3719,7 @@
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_6342" model="account.account.template">
-      <field name="name">Literatur, Zeitschriften, Bücher</field>
+      <field name="name">Zeitschriften, Bücher (Fachliteratur)</field>
       <field name="code">6342</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -3711,6 +3893,13 @@
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_6545" model="account.account.template">
+      <field name="name">Direkt mit dem Umsatz verbundene Steuern</field>
+      <field name="code">6545</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_6550" model="account.account.template">
       <field name="name">Bestandsveränderung</field>
       <field name="code">6550</field>
@@ -3721,6 +3910,13 @@
     <record id="account_6555" model="account.account.template">
       <field name="name">Andere aktivierte Eigenleistungen</field>
       <field name="code">6555</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_6559" model="account.account.template">
+      <field name="name">Aktivierte Eigenleistungen (den Herstellungskosten zurechenbare Fremdkapitalzinsen</field>
+      <field name="code">6559</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -4271,6 +4467,13 @@
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_8045" model="account.account.template">
+      <field name="name">Direkt mit dem Umsatz verbundene Steuern</field>
+      <field name="code">8045</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_8046" model="account.account.template">
       <field name="name">Erlösschmälerungen</field>
       <field name="code">8046</field>
@@ -4330,6 +4533,13 @@
     <record id="account_8095" model="account.account.template">
       <field name="name">Andere aktivierte Eigenleistungen</field>
       <field name="code">8095</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_8099" model="account.account.template">
+      <field name="name">Aktivierte Eigenleistungen (den Herstellungskosten zurechenbare Fremdkapitalzinsen)</field>
+      <field name="code">8099</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -4421,6 +4631,13 @@
     <record id="account_8154" model="account.account.template">
       <field name="name">Wareneingang 19 % VSt</field>
       <field name="code">8154</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_expenses"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_8155" model="account.account.template">
+      <field name="name">Fremdleistungen</field>
+      <field name="code">8155</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_expenses"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -4873,6 +5090,13 @@
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
+    <record id="account_8585" model="account.account.template">
+      <field name="name">Direkt mit dem Umsatz verbundene Steuern</field>
+      <field name="code">8585</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
     <record id="account_8590" model="account.account.template">
       <field name="name">Bestandsveränderung</field>
       <field name="code">8590</field>
@@ -4883,6 +5107,13 @@
     <record id="account_8595" model="account.account.template">
       <field name="name">Andere aktivierte Eigenleistungen</field>
       <field name="code">8595</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="account.data_account_type_revenue"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_8599" model="account.account.template">
+      <field name="name">Aktivierte Eigenleistungen (den Herstellungskosten zurechenbare Fremdkapitalzinsen)</field>
+      <field name="code">8599</field>
       <field eval="False" name="reconcile"/>
       <field name="user_type_id" ref="account.data_account_type_revenue"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
@@ -5094,693 +5325,845 @@
       <field name="name">Umgebuchte Einnahmen bisheriger Zweckbetriebe</field>
       <field name="code">8980</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_purpose_operations_turned_taxable"/>
+      <field name="user_type_id" ref="data_account_type_special_purpose_operations_turned_taxable"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_8985" model="account.account.template">
       <field name="name">Erlöse 19 % USt</field>
       <field name="code">8985</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_purpose_operations_turned_taxable"/>
+      <field name="user_type_id" ref="data_account_type_special_purpose_operations_turned_taxable"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_8986" model="account.account.template">
       <field name="name">Aufwand aus Storno Erlöse 7 % USt</field>
       <field name="code">8986</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_purpose_operations_turned_taxable"/>
+      <field name="user_type_id" ref="data_account_type_special_purpose_operations_turned_taxable"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_8987" model="account.account.template">
       <field name="name">Gegenkonto zu 8985/8986</field>
       <field name="code">8987</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_purpose_operations_turned_taxable"/>
+      <field name="user_type_id" ref="data_account_type_special_purpose_operations_turned_taxable"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_8990" model="account.account.template">
       <field name="name">Umgebuchte Ausgaben bisheriger Zweckbetriebe</field>
       <field name="code">8990</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_special_purpose_operations_turned_taxable"/>
+      <field name="user_type_id" ref="data_account_type_special_purpose_operations_turned_taxable"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9000" model="account.account.template">
       <field name="name">Saldenvorträge Sachkonten</field>
       <field name="code">9000</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9001" model="account.account.template">
+      <field name="name">Saldenvorträge, Sachkonten</field>
+      <field name="code">9001</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9008" model="account.account.template">
       <field name="name">Saldenvorträge Debitoren</field>
       <field name="code">9008</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9009" model="account.account.template">
       <field name="name">Saldenvorträge Kreditoren</field>
       <field name="code">9009</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9060" model="account.account.template">
       <field name="name">Offene Posten aus 1990</field>
       <field name="code">9060</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9070" model="account.account.template">
       <field name="name">Offene Posten aus 2000</field>
       <field name="code">9070</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9071" model="account.account.template">
       <field name="name">Offene Posten aus 2001</field>
       <field name="code">9071</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9072" model="account.account.template">
       <field name="name">Offene Posten aus 2002</field>
       <field name="code">9072</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9073" model="account.account.template">
       <field name="name">Offene Posten aus 2003</field>
       <field name="code">9073</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9074" model="account.account.template">
       <field name="name">Offene Posten aus 2004</field>
       <field name="code">9074</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9075" model="account.account.template">
       <field name="name">Offene Posten aus 2005</field>
       <field name="code">9075</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9076" model="account.account.template">
       <field name="name">Offene Posten aus 2006</field>
       <field name="code">9076</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9077" model="account.account.template">
       <field name="name">Offene Posten aus 2007</field>
       <field name="code">9077</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9078" model="account.account.template">
       <field name="name">Offene Posten aus 2008</field>
       <field name="code">9078</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9079" model="account.account.template">
       <field name="name">Offene Posten aus 2009</field>
       <field name="code">9079</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9080" model="account.account.template">
       <field name="name">Offene Posten aus 2010</field>
       <field name="code">9080</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9081" model="account.account.template">
       <field name="name">Offene Posten aus 2011</field>
       <field name="code">9081</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9082" model="account.account.template">
       <field name="name">Offene Posten aus 2012</field>
       <field name="code">9082</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9083" model="account.account.template">
       <field name="name">Offene Posten aus 2013</field>
       <field name="code">9083</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9084" model="account.account.template">
       <field name="name">Offene Posten aus 2014</field>
       <field name="code">9084</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9085" model="account.account.template">
+      <field name="name">Offene Posten aus 2015</field>
+      <field name="code">9085</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9086" model="account.account.template">
+      <field name="name">Offene Posten aus 2016</field>
+      <field name="code">9086</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9090" model="account.account.template">
       <field name="name">Summenvortragskonto</field>
       <field name="code">9090</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9091" model="account.account.template">
       <field name="name">Offene Posten aus 1991</field>
       <field name="code">9091</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9092" model="account.account.template">
       <field name="name">Offene Posten aus 1992</field>
       <field name="code">9092</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9093" model="account.account.template">
       <field name="name">Offene Posten aus 1993</field>
       <field name="code">9093</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9094" model="account.account.template">
       <field name="name">Offene Posten aus 1994</field>
       <field name="code">9094</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9095" model="account.account.template">
       <field name="name">Offene Posten aus 1995</field>
       <field name="code">9095</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9096" model="account.account.template">
       <field name="name">Offene Posten aus 1996</field>
       <field name="code">9096</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9097" model="account.account.template">
       <field name="name">Offene Posten aus 1997</field>
       <field name="code">9097</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9098" model="account.account.template">
       <field name="name">Offene Posten aus 1998</field>
       <field name="code">9098</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9099" model="account.account.template">
       <field name="name">Offene Posten aus 1999</field>
       <field name="code">9099</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9240" model="account.account.template">
       <field name="name">Investitionsverbindlichkeiten bei den Leistungsverbindlichkeiten</field>
       <field name="code">9240</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9241" model="account.account.template">
       <field name="name">Investitionsverbindlichkeiten aus Sachanlagenkäufen bei Leistungsverbindlichkeiten</field>
       <field name="code">9241</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9242" model="account.account.template">
       <field name="name">Investitionsverbindlichkeiten aus Käufen von immateriellen Vermögensgegenständen bei Leistungsverbindlichkeiten</field>
       <field name="code">9242</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9243" model="account.account.template">
       <field name="name">Investitionsverbindlichkeiten aus Käufen von Finanzanlagen bei Leistungsverbindlichkeiten</field>
       <field name="code">9243</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9244" model="account.account.template">
       <field name="name">Gegenkonto zu Konten 9240-9243</field>
       <field name="code">9244</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9245" model="account.account.template">
       <field name="name">Forderungen aus Sachanlagenverkäufen bei sonstigen Vermögensgegenständen</field>
       <field name="code">9245</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9246" model="account.account.template">
       <field name="name">Forderungen aus Verkäufen immaterieller Vermögensgegenstände bei sonstigen Vermögensgegenständen</field>
       <field name="code">9246</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9247" model="account.account.template">
       <field name="name">Forderungen aus Verkäufen von Finanzanlagen bei sonstigen Vermögensgegenständen</field>
       <field name="code">9247</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9249" model="account.account.template">
       <field name="name">Gegenkonto zu Konten 9245-9247</field>
       <field name="code">9249</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9270" model="account.account.template">
-      <field name="name">Gegenkonto zu 9273-9279 (Soll-Buchung)</field>
+      <field name="name">Gegenkonto zu 9271 - 9279 (Sollbuchung)</field>
       <field name="code">9270</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9271" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus der Begebung und Übertragung von Wechseln</field>
+      <field name="code">9271</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9272" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus der Begebung und Übertragung von Wechseln gegenüber verbundenen/assoziierten Unternehmen</field>
+      <field name="code">9272</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9273" model="account.account.template">
       <field name="name">Verbindlichkeiten aus Bürgschaften, Wechsel- und Scheckbürgschaften</field>
       <field name="code">9273</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9274" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus Bürgschaften, Wechsel- und Scheckbürgschaften gegenüber verbundenen/assoziierten Unternehmen</field>
+      <field name="code">9274</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9275" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus Gewährleistungsverträgen</field>
+      <field name="code">9275</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9276" model="account.account.template">
+      <field name="name">Verbindlichkeiten aus Gewährleistungsverträgen
+gegenüber verbundenen/assoziierten Unternehmen</field>
+      <field name="code">9276</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9277" model="account.account.template">
+      <field name="name">Haftung aus der Bestellung von Sicherheiten für fremde Verbindlichkeiten</field>
+      <field name="code">9277</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9278" model="account.account.template">
+      <field name="name">Haftung aus der Bestellung von Sicherheiten für fremde Verbindlichkeiten gegenüber verbundenen/assoziierten Unternehmen</field>
+      <field name="code">9278</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9279" model="account.account.template">
       <field name="name">Verpflichtungen aus Treuhandvermögen</field>
       <field name="code">9279</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9490" model="account.account.template">
       <field name="name">Statistisches Konto für den Gewinnzuschlag nach §§ 6b, 6c und 7g a. F. EStG (Haben)</field>
       <field name="code">9490</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9491" model="account.account.template">
       <field name="name">Statistisches Konto für den Gewinnzuschlag nach §§ 6b, 6c und 7g a. F. EStG (Soll) - Gegenkonto zu 9490</field>
       <field name="code">9491</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9500" model="account.account.template">
       <field name="name">Forderungen aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz oder eines Kleinunternehmers</field>
       <field name="code">9500</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9501" model="account.account.template">
       <field name="name">Forderungen aus Lieferungen und Leistungen zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9501</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9502" model="account.account.template">
       <field name="name">Forderungen aus steuerfreien oder nicht steuerbaren Lieferungen und Leistungen</field>
       <field name="code">9502</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9505" model="account.account.template">
       <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz</field>
       <field name="code">9505</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9506" model="account.account.template">
       <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9506</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9507" model="account.account.template">
       <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuer</field>
       <field name="code">9507</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9510" model="account.account.template">
       <field name="name">Erlöse zum allgemeinen Umsatzsteuersatz</field>
       <field name="code">9510</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9511" model="account.account.template">
       <field name="name">Erlöse zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9511</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9512" model="account.account.template">
       <field name="name">Erlöse steuerfrei und nicht steuerbar</field>
       <field name="code">9512</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9515" model="account.account.template">
       <field name="name">Wareneinkauf zum allgemeinen Umsatzsteuersatz</field>
       <field name="code">9515</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9516" model="account.account.template">
       <field name="name">Wareneinkauf zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9516</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9517" model="account.account.template">
       <field name="name">Wareneinkauf ohne Vorsteuerabzug</field>
       <field name="code">9517</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9520" model="account.account.template">
       <field name="name">Abschreibungen auf Gebäude</field>
       <field name="code">9520</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9521" model="account.account.template">
       <field name="name">Abschreibungen auf Kfz</field>
       <field name="code">9521</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9525" model="account.account.template">
       <field name="name">Absetzung für aussergewöhnliche technische und wirtschaftliche Abnutzung der Gebäude</field>
       <field name="code">9525</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9526" model="account.account.template">
       <field name="name">Absetzung für aussergewöhnliche technische und wirtschaftliche Abnutzung der Kfz</field>
       <field name="code">9526</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9527" model="account.account.template">
       <field name="name">Absetzung für aussergewöhnliche technische und wirtschaftliche Abnutzung sonstiger Wirtschaftsgüter</field>
       <field name="code">9527</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9530" model="account.account.template">
       <field name="name">Sonderabschreibungen nach § 7g Abs. 1 und 2 EStG (ohne Kfz)</field>
       <field name="code">9530</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9531" model="account.account.template">
       <field name="name">Sonderabschreibungen nach § 7g Abs. 1 und 2 EStG (für Kfz)</field>
       <field name="code">9531</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9535" model="account.account.template">
       <field name="name">Umsatzsteuer in den Forderungen zum allgemeinen Umsatzsteuersatz</field>
       <field name="code">9535</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9536" model="account.account.template">
       <field name="name">Umsatzsteuer in den Forderungen zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9536</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9540" model="account.account.template">
       <field name="name">Vorsteuer in den Verbindlichkeiten zum allgemeinen Umsatzsteuersatz</field>
       <field name="code">9540</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9541" model="account.account.template">
       <field name="name">Vorsteuer in den Verbindlichkeiten zum ermässigten Umsatzsteuersatz</field>
       <field name="code">9541</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9599" model="account.account.template">
       <field name="name">Gegenkonto zu 9500 bis 9598</field>
       <field name="code">9599</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9600" model="account.account.template">
       <field name="name">Faktor pauschale Vorsteuer 7 %</field>
       <field name="code">9600</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9620" model="account.account.template">
       <field name="name">Fiktive Einnahmen aus Leistungen Dritter</field>
       <field name="code">9620</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9621" model="account.account.template">
       <field name="name">Fiktive Ausgaben durch Zahlung Dritter</field>
       <field name="code">9621</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9630" model="account.account.template">
       <field name="name">Nichtanzusetzende Einnahmen Klasse 7 u. 8 (§ 64 III AO)</field>
       <field name="code">9630</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9631" model="account.account.template">
       <field name="name">Nichtanzusetzende Einnahmen Klasse 5 (§ 67a I AO)</field>
       <field name="code">9631</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9632" model="account.account.template">
       <field name="name">Hinzuzurechnende Einnahmen Klasse 7 u.8 (§ 64 III AO)</field>
       <field name="code">9632</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9633" model="account.account.template">
       <field name="name">Hinzuzurechnende Einnahmen Klasse 5 (§ 67a I AO)</field>
       <field name="code">9633</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9650" model="account.account.template">
       <field name="name">Umsatzsteuer Teilbereich 5001</field>
       <field name="code">9650</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9651" model="account.account.template">
       <field name="name">Umsatzsteuer Klasse 7</field>
       <field name="code">9651</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9652" model="account.account.template">
       <field name="name">Umsatzsteuer Klasse 8</field>
       <field name="code">9652</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9690" model="account.account.template">
       <field name="name">Gegenkonto für statistische Buchungen</field>
       <field name="code">9690</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9800" model="account.account.template">
       <field name="name">Abstimmsummenkonto für den Import von Buchungssätzen</field>
       <field name="code">9800</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9850" model="account.account.template">
       <field name="name">Gegenkonto zu 9882 bis 9889 - für Vereinsergebnis/Stiftungsergebnis/Jahresüberschuss</field>
       <field name="code">9850</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9860" model="account.account.template">
       <field name="name">Gegenkonto zu 9882 bis 9889 - für Ergebnisvortrag/Mittelvortrag/Bilanzgewinn</field>
       <field name="code">9860</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9882" model="account.account.template">
       <field name="name">Ergebnisse Bereich 2000 und Teilbereich 3200</field>
       <field name="code">9882</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9884" model="account.account.template">
       <field name="name">Ergebnisse Bereich 4000 und Teilbereich 3400</field>
       <field name="code">9884</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9885" model="account.account.template">
       <field name="name">Ergebnisse Bereich 5000 und Teilbereich 3500</field>
       <field name="code">9885</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9886" model="account.account.template">
       <field name="name">Ergebnisse Bereich 6000 und Teilbereich 3600</field>
       <field name="code">9886</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9887" model="account.account.template">
       <field name="name">Ergebnisse Bereich 7000 und Teilbereich 3700</field>
       <field name="code">9887</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9888" model="account.account.template">
       <field name="name">Ergebnisse Bereich 8000 und Teilbereich 3800</field>
       <field name="code">9888</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9889" model="account.account.template">
       <field name="name">Ergebnisvorträge allgemein</field>
       <field name="code">9889</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9966" model="account.account.template">
+      <field name="name">Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG aus dem 2. vorangegangenen Wirtschaftsjahr, außerbilanziell (Haben)</field>
+      <field name="code">9966</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9967" model="account.account.template">
+      <field name="name">Hinzurechnung Investitionsabzugsbetrag
+§ 7g Abs. 2 EStG aus dem 3. vorangegangenen Wirtschaftsjahr, außerbilanziell (Haben)</field>
+      <field name="code">9967</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9968" model="account.account.template">
+      <field name="name">Rückgängigmachung Investitionsabzugsbetrag
+§ 7g Abs. 3, 4 EStG im 2. vorangegangenen Wirtschaftsjahr</field>
+      <field name="code">9968</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9969" model="account.account.template">
+      <field name="name">Rückgängigmachung Investitionsabzugsbetrag
+§ 7g Abs. 3, 4 EStG im 3. vorangegangenen Wirtschaftsjahr</field>
+      <field name="code">9969</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9970" model="account.account.template">
       <field name="name">Investitionsabzugsbetrag § 7g Abs. 1 EStG, ausserbilanziell (Soll)</field>
       <field name="code">9970</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9971" model="account.account.template">
       <field name="name">Investitionsabzugsbetrag § 7g Abs. 1 EStG, ausserbilanziell (Haben) - Gegenkonto zu 9970</field>
       <field name="code">9971</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9972" model="account.account.template">
-      <field name="name">Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG, ausserbilanziell (Haben)</field>
+      <field name="name">Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG aus dem vorangegangenen Wirtschaftsjahr, außerbilanziell (Haben)</field>
       <field name="code">9972</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9973" model="account.account.template">
-      <field name="name">Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG, ausserbilanziell (Soll) - Gegenkonto zu 9972</field>
+      <field name="name">Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG aus den vorangegangenen Wirtschaftsjahren, außerbilanziell (Soll) - Gegenkonto zu 9972, 9966, 9967</field>
       <field name="code">9973</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9974" model="account.account.template">
-      <field name="name">Rückgängigmachung § 7g Abs. 3, 4 EStG und Erhöhung Investitionsabzugsbetrag im früheren Abzugsjahr</field>
+      <field name="name">Rückgängigmachung Investitionsabzugsbetrag
+§ 7g Abs. 3, 4 EStG im vorangegangenen Wirtschaftsjahr</field>
       <field name="code">9974</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="account_9975" model="account.account.template">
-      <field name="name">Rückgängigmachung § 7g Abs. 3, 4 EStG und Erhöhung Investitionsabzugsbetrag im früheren Abzugsjahr - Gegenkonto zu 9974</field>
+      <field name="name">Rückgängigmachung Investitionsabzugsbetrag § 7g Abs. 3, 4 EStG in den vorangegangenen Wirtschaftsjahren - Gegenkonto zu 9974, 9968, 9969</field>
       <field name="code">9975</field>
       <field eval="False" name="reconcile"/>
-      <field name="user_type_id" ref="data_account_type_direct_statistical_accounts"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9990" model="account.account.template">
+      <field name="name">Erträge von außergewöhnlicher Größenordnung oder Bedeutung</field>
+      <field name="code">9990</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9991" model="account.account.template">
+      <field name="name">Erträge (aperiodisch)</field>
+      <field name="code">9991</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9992" model="account.account.template">
+      <field name="name">Erträge von außergewöhnlicher Größenordnung oder Bedeutung (aperiodisch)</field>
+      <field name="code">9992</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9993" model="account.account.template">
+      <field name="name">Aufwendungen von außergewöhnlicher Größenordnung oder Bedeutung</field>
+      <field name="code">9993</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9994" model="account.account.template">
+      <field name="name">Aufwendungen (aperiodisch)</field>
+      <field name="code">9994</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9995" model="account.account.template">
+      <field name="name">Aufwendungen von außergewöhnlicher Größenordnung oder Bedeutung (aperiodisch)</field>
+      <field name="code">9995</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
+      <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+    </record>
+    <record id="account_9998" model="account.account.template">
+      <field name="name">Gegenkonto zu 9990-9997</field>
+      <field name="code">9998</field>
+      <field eval="False" name="reconcile"/>
+      <field name="user_type_id" ref="data_account_type_statistical_accounts"/>
       <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
     </record>
     <record id="l10n_chart_de_skr49_hlo" model="account.chart.template">
@@ -5788,8 +6171,8 @@
       <field name="bank_account_code_prefix">0945</field>
       <field name="property_account_receivable_id" ref="account_0650"/>
       <field name="property_account_payable_id" ref="account_1340"/>
-      <field name="property_account_expense_categ_id" ref="account_8154"/>
-      <field name="property_account_income_categ_id" ref="account_8300"/>
+      <field name="property_account_expense_categ_id" ref="account_8155"/>
+      <field name="property_account_income_categ_id" ref="account_8030"/>
       <field name="income_currency_exchange_account_id" ref="account_4154"/>
       <field name="expense_currency_exchange_account_id" ref="account_4715"/>
     </record>
