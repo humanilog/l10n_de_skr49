@@ -9,3 +9,6 @@ data_account_type_income_neutral_items,Income Neutral items,other,False
 data_account_type_appropriation_bill,Appropriation Bill,other,False
 data_account_type_special_purpose_operations_turned_taxable,Special Purpose Operations turned taxable,other,False
 data_account_type_statistical_accounts,Statistical Accounts,other,False
+data_account_type_direct_costs,Direct Costs,other,False
+data_account_type_unaffected_earnings,Current Year Earnings,other,True
+data_account_type_profittransfer,Profit Transfer 8980,other,True

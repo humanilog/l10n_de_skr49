@@ -1,5 +1,5 @@
 {
-  'name': 'Deutschland SKR04 HLO - Accounting',
+  'name': 'Deutschland SKR49 HLO - Accounting',
   'version': '1.0',
   'author': 'HLO',
   'website': 'https://humanilog.org',
