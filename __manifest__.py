@@ -1,6 +1,6 @@
 {
   'name': 'Deutschland SKR49 HLO - Accounting',
-  'version': '1.0',
+  'version': '2.0',
   'author': 'HLO',
   'website': 'https://humanilog.org',
   'category': 'Localization/Account Charts',
@@ -11,12 +11,11 @@ Dieses Modul beinhaltet einen deutschen Kontenrahmen für die HLO basierend auf 
 German accounting chart and localization for the HLO.
   """,
   'depends': ['l10n_de'],
-  'demo': [],
   'data': [
-    'account.account.type.csv',
-    'account_chart.xml',
-    'account_tax_fiscal_position.xml',
-    'account.chart.template.yml',
+    'data/account.account.type.csv',
+    'data/account_chart.xml',
+    'data/account_tax_fiscal_position.xml',
+    'data/account.chart.template.yml',
   ],
   'installable': True,
 }
