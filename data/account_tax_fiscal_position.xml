@@ -3,8 +3,8 @@
         <!-- ust Codes -->
         <!-- Purchases + Input ust -->
 
-        <record id="tax_export_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_export_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">Steuerfreie Ausfuhr (§4 Nr. 1a UStG)</field>
             <field name="description">steuerfreie Ausfuhr</field>
             <field name="amount_type">percent</field>
@@ -14,8 +14,8 @@
             <field name="type_tax_use">sale</field>
             <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_37')])]"/>
         </record>
-        <record id="tax_not_taxable_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_not_taxable_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">nicht steuerbar</field>
             <field name="description">nicht steuerbar</field>
             <field name="amount_type">percent</field>
@@ -25,8 +25,8 @@
             <field name="type_tax_use">sale</field>
             <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_59')])]"/>
         </record>
-        <record id="tax_ust_19_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_ust_19_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">19% Umsatzsteuer</field>
             <field name="description">19% USt</field>
             <field name="amount_type">percent</field>
@@ -36,8 +36,8 @@
             <field name="type_tax_use">sale</field>
             <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_09'), ref('l10n_de.tag_de_44')])]"/>
         </record>
-        <record id="tax_ust_7_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_ust_7_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">7% Umsatzsteuer</field>
             <field name="description">7% USt</field>
             <field name="amount_type">percent</field>
@@ -47,8 +47,8 @@
             <field name="type_tax_use">sale</field>
             <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_10'), ref('l10n_de.tag_de_45')])]"/>
         </record>
-        <record id="tax_vst_19_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_vst_19_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">19% Vorsteuer</field>
             <field name="description">19% VSt</field>
             <field name="amount_type">percent</field>
@@ -58,8 +58,8 @@
             <field name="type_tax_use">purchase</field>
             <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_31'), ref('l10n_de.tag_de_70')])]"/>
         </record>
-        <record id="tax_vst_7_skr49_hlo" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_chart_de_skr49_hlo"/>
+        <record id="tax_vst_7_skr49" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
             <field name="name">7% Vorsteuer</field>
             <field name="description">7% VSt</field>
             <field name="amount_type">percent</field>
