@@ -1,14 +1,14 @@
 {
   'name': 'Deutschland SKR49 HLO - Accounting',
   'version': '2.0',
-  'author': 'HLO',
+  'author': 'humanilog',
   'website': 'https://humanilog.org',
   'category': 'Localization/Account Charts',
   'description': """
-Dieses Modul beinhaltet einen deutschen Kontenrahmen für die HLO basierend auf dem SKR49.
+Dieses Modul beinhaltet einen deutschen Kontenrahmen basierend auf dem SKR49.
 =========================================================================================
 
-German accounting chart and localization for the HLO.
+German accounting chart and localization for the SKR49.
   """,
   'depends': ['l10n_de'],
   'data': [
