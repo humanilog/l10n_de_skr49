@@ -3,7 +3,7 @@
   'version': '2.0',
   'author': 'humanilog',
   'website': 'https://humanilog.org',
-  'category': 'Localization/Account Charts',
+  'category': 'Localization',
   'description': """
 Dieses Modul beinhaltet einen deutschen Kontenrahmen basierend auf dem SKR49.
 =========================================================================================
