@@ -544,7 +544,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_015'), ref('account_tag_skr49_075')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_0504" model="account.account.template">
-    <field name="name">Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft </field>
+    <field name="name">Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft</field>
     <field name="code">0504</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
@@ -721,7 +721,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_017'), ref('account_tag_skr49_087')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_0651" model="account.account.template">
-    <field name="name">Forderungen aus Lieferungen und Leistungen </field>
+    <field name="name">Forderungen aus Lieferungen und Leistungen</field>
     <field name="code">0651</field>
     <field eval="True" name="reconcile"/>
     <field eval="True" name="deprecated"/>
@@ -2468,8 +2468,8 @@
     <field eval="[(6,0,[ref('account_tag_skr49_029'), ref('account_tag_skr49_134')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1200 " model="account.account.template">
-    <field name="name">Rückstellungen für Pensionen und ähnliche Verpflichtungen </field>
-    <field name="code">1200 </field>
+    <field name="name">Rückstellungen für Pensionen und ähnliche Verpflichtungen</field>
+    <field name="code">1200</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -2501,7 +2501,7 @@
   </record>
   <record id="chart_skr49_1235 " model="account.account.template">
     <field name="name">Rückgängig gemachte Bewilligungen</field>
-    <field name="code">1235 </field>
+    <field name="code">1235</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -2645,7 +2645,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_032'), ref('account_tag_skr49_143')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1341" model="account.account.template">
-    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz (EÜR) </field>
+    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz (EÜR)</field>
     <field name="code">1341</field>
     <field eval="True" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_payable"/>
@@ -2653,7 +2653,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_032'), ref('account_tag_skr49_143')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1342" model="account.account.template">
-    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz (EÜR) </field>
+    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz (EÜR)</field>
     <field name="code">1342</field>
     <field eval="True" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_payable"/>
@@ -2661,7 +2661,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_032'), ref('account_tag_skr49_143')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1343" model="account.account.template">
-    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuerabzug (EÜR) </field>
+    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuerabzug (EÜR)</field>
     <field name="code">1343</field>
     <field eval="True" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_payable"/>
@@ -2669,7 +2669,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_032'), ref('account_tag_skr49_143')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1344" model="account.account.template">
-    <field name="name">Gegenkonto 1341-1343 bei Aufteilung der Verbindlichkeiten nach Steuersätzen (EÜR) </field>
+    <field name="name">Gegenkonto 1341-1343 bei Aufteilung der Verbindlichkeiten nach Steuersätzen (EÜR)</field>
     <field name="code">1344</field>
     <field eval="True" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_payable"/>
@@ -2685,7 +2685,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_032'), ref('account_tag_skr49_144')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1346" model="account.account.template">
-    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent </field>
+    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent</field>
     <field name="code">1346</field>
     <field eval="True" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_payable"/>
@@ -2845,7 +2845,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_148')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_1375" model="account.account.template">
-    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht </field>
+    <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht</field>
     <field name="code">1375</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
@@ -2902,7 +2902,7 @@
   </record>
   <record id="chart_skr49_1395 " model="account.account.template">
     <field name="name">Verbindlichkeiten aus bedingt rückzahlungspflichtigen Spenden</field>
-    <field name="code">1395 </field>
+    <field name="code">1395</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -3526,7 +3526,7 @@
   </record>
   <record id="chart_skr49_1825 " model="account.account.template">
     <field name="name">Nettoerlöse 19 %</field>
-    <field name="code">1825 </field>
+    <field name="code">1825</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -3955,8 +3955,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_161'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2421" model="account.account.template">
-    <field name="name">Erlöse aus Verkäufen Sachanlagevermögen 
-(bei Buchgewinn) </field>
+    <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchgewinn)</field>
     <field name="code">2421</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
@@ -3972,7 +3971,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_161'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2425" model="account.account.template">
-    <field name="name">Anlagenabgänge Sachanlagen (Restbuchwert bei Buchgewinn) </field>
+    <field name="name">Anlagenabgänge Sachanlagen (Restbuchwert bei Buchgewinn)</field>
     <field name="code">2425</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
@@ -3996,8 +3995,7 @@
     <field eval="[(6,0,[ref('account_tag_skr49_161'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2490" model="account.account.template">
-    <field name="name">Erträge aus Zuschreibungen des Sachanla-
-gevermögens </field>
+    <field name="name">Erträge aus Zuschreibungen des Sachanlagevermögens</field>
     <field name="code">2490</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
@@ -4013,7 +4011,7 @@ gevermögens </field>
     <field eval="[(6,0,[ref('account_tag_skr49_033'), ref('account_tag_skr49_052'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2501" model="account.account.template">
-    <field name="name">Sofortabschreibung   geringwertiger  Wirtschaftsgüter </field>
+    <field name="name">Sofortabschreibung   geringwertiger  Wirtschaftsgüter</field>
     <field name="code">2501</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_depreciation"/>
@@ -4037,7 +4035,7 @@ gevermögens </field>
     <field eval="[(6,0,[ref('account_tag_skr49_033'), ref('account_tag_skr49_166'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2507" model="account.account.template">
-    <field name="name">Verrechnete kalkulatorische Abschreibungen </field>
+    <field name="name">Verrechnete kalkulatorische Abschreibungen</field>
     <field name="code">2507</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_depreciation"/>
@@ -4101,8 +4099,7 @@ gevermögens </field>
     <field eval="[(6,0,[ref('account_tag_skr49_033'), ref('account_tag_skr49_167'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2557" model="account.account.template">
-    <field name="name">Sachzuwendungen und Dienstleistungen an 
-Arbeitnehmer </field>
+    <field name="name">Sachzuwendungen und Dienstleistungen an Arbeitnehmer</field>
     <field name="code">2557</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -4118,7 +4115,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_033'), ref('account_tag_skr49_167'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2560" model="account.account.template">
-    <field name="name">Reisekosten Arbeitnehmer Verpflegungsmehraufwand </field>
+    <field name="name">Reisekosten Arbeitnehmer Verpflegungsmehraufwand</field>
     <field name="code">2560</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -4310,7 +4307,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_033'), ref('account_tag_skr49_166'), ref('account_tag_skr49_001')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_2890" model="account.account.template">
-    <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchverlust) </field>
+    <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchverlust)</field>
     <field name="code">2890</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -4439,7 +4436,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_3221 " model="account.account.template">
     <field name="name">Geldzuwendungen gegen Zuwendungsbestätigung</field>
-    <field name="code">3221 </field>
+    <field name="code">3221</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -4471,7 +4468,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_3230 " model="account.account.template">
     <field name="name">Aufwandszuwendungen gegen Zuwendungsbestätigung</field>
-    <field name="code">3230 </field>
+    <field name="code">3230</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -4566,7 +4563,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_002'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3410" model="account.account.template">
-    <field name="name">Steuerfreie Erträge aus Wertpapieren (Bestand vor 01.01.2009) </field>
+    <field name="name">Steuerfreie Erträge aus Wertpapieren (Bestand vor 01.01.2009)</field>
     <field name="code">3410</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4582,7 +4579,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_002'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3420" model="account.account.template">
-    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei </field>
+    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei</field>
     <field name="code">3420</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4590,7 +4587,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_002'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3421" model="account.account.template">
-    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei 0 % USt </field>
+    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei 0 % USt</field>
     <field name="code">3421</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4598,7 +4595,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_002'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3422" model="account.account.template">
-    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei 7 % USt </field>
+    <field name="name">Erträge aus dem Abgang von Gegenständen des Anlagevermögens ertragsteuerfrei 7 % USt</field>
     <field name="code">3422</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4782,7 +4779,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_038'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3710" model="account.account.template">
-    <field name="name">Steuerfreie Einnahmen zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport </field>
+    <field name="name">Steuerfreie Einnahmen zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport</field>
     <field name="code">3710</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4790,7 +4787,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_038'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3711" model="account.account.template">
-    <field name="name">Mitglieder-Umlagen zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport </field>
+    <field name="name">Mitglieder-Umlagen zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport</field>
     <field name="code">3711</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4798,7 +4795,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_038'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3712" model="account.account.template">
-    <field name="name">Mitglieder-Zuschüsse zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport </field>
+    <field name="name">Mitglieder-Zuschüsse zum Verlustausgleich für Teilbereich 7000 Geschäftsbetrieb Sport</field>
     <field name="code">3712</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4926,7 +4923,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_039'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3820" model="account.account.template">
-    <field name="name">Erhaltene Steuerzinsen auf KSt </field>
+    <field name="name">Erhaltene Steuerzinsen auf KSt</field>
     <field name="code">3820</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
@@ -4934,7 +4931,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_039'), ref('account_tag_skr49_176')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3850" model="account.account.template">
-    <field name="name">Nicht abziehbare Ausgaben Bereich 8000 </field>
+    <field name="name">Nicht abziehbare Ausgaben Bereich 8000</field>
     <field name="code">3850</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -5150,7 +5147,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_042'), ref('account_tag_skr49_178')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3974" model="account.account.template">
-    <field name="name">Entnahmen aus der Ansparrücklage ⌡ 62 Abs. 4 AO </field>
+    <field name="name">Entnahmen aus der Ansparrücklage ⌡ 62 Abs. 4 AO</field>
     <field name="code">3974</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="l10n_de.account_type_other"/>
@@ -5174,7 +5171,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_042'), ref('account_tag_skr49_178')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_3979" model="account.account.template">
-    <field name="name">Einstellungen in die Ansparrücklage ⌡ 62 Abs. 4 AO </field>
+    <field name="name">Einstellungen in die Ansparrücklage ⌡ 62 Abs. 4 AO</field>
     <field name="code">3979</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="l10n_de.account_type_other"/>
@@ -5801,7 +5798,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4965 " model="account.account.template">
     <field name="name">Anteilige Raumkosten</field>
-    <field name="code">4965 </field>
+    <field name="code">4965</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5809,7 +5806,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4966 " model="account.account.template">
     <field name="name">Miete, Pacht</field>
-    <field name="code">4966 </field>
+    <field name="code">4966</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5817,7 +5814,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4967 " model="account.account.template">
     <field name="name">Raumnebenkosten</field>
-    <field name="code">4967 </field>
+    <field name="code">4967</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5825,7 +5822,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4968 " model="account.account.template">
     <field name="name">Bewirtungskosten (abzugsfähig)</field>
-    <field name="code">4968 </field>
+    <field name="code">4968</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5833,7 +5830,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4970 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer</field>
-    <field name="code">4970 </field>
+    <field name="code">4970</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5841,7 +5838,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4971 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Verpflegungsmehraufwand</field>
-    <field name="code">4971 </field>
+    <field name="code">4971</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5849,7 +5846,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4972 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Übernachtungsaufwand</field>
-    <field name="code">4972 </field>
+    <field name="code">4972</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5857,7 +5854,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4973 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Fahrtkosten</field>
-    <field name="code">4973 </field>
+    <field name="code">4973</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5865,7 +5862,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4974 " model="account.account.template">
     <field name="name">Kilometergelderstattung Arbeitnehmer</field>
-    <field name="code">4974 </field>
+    <field name="code">4974</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5873,7 +5870,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4980 " model="account.account.template">
     <field name="name">Löhne und Gehälter</field>
-    <field name="code">4980 </field>
+    <field name="code">4980</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5881,7 +5878,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4981 " model="account.account.template">
     <field name="name">Abgeführte Lohnsteuer</field>
-    <field name="code">4981 </field>
+    <field name="code">4981</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5889,7 +5886,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4982 " model="account.account.template">
     <field name="name">Freiwillige soziale Aufwendungen, lohnsteuerpflichtig</field>
-    <field name="code">4982 </field>
+    <field name="code">4982</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5897,7 +5894,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4990 " model="account.account.template">
     <field name="name">Gesetzliche soziale Aufwendungen</field>
-    <field name="code">4990 </field>
+    <field name="code">4990</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5913,7 +5910,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_4992 " model="account.account.template">
     <field name="name">Beiträge zur Berufsgenossenschaft1)</field>
-    <field name="code">4992 </field>
+    <field name="code">4992</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -5976,7 +5973,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_049'), ref('account_tag_skr49_189'), ref('account_tag_skr49_003')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_5023" model="account.account.template">
-    <field name="name">Eintrittsgelder aus Sport 3 (7 % USt) </field>
+    <field name="name">Eintrittsgelder aus Sport 3 (7 % USt)</field>
     <field name="code">5023</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
@@ -8224,7 +8221,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_053'), ref('account_tag_skr49_006')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_6841" model="account.account.template">
-    <field name="name">Porto, Telefon, </field>
+    <field name="name">Porto, Telefon,</field>
     <field name="code">6841</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
@@ -8401,7 +8398,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7000 " model="account.account.template">
     <field name="name">Einnahmen aus Geschäftsbetrieben Sport</field>
-    <field name="code">7000 </field>
+    <field name="code">7000</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8409,7 +8406,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7002 " model="account.account.template">
     <field name="name">Einnahmen 19 % USt Sport 3</field>
-    <field name="code">7002 </field>
+    <field name="code">7002</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8417,7 +8414,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7004 " model="account.account.template">
     <field name="name">Eintritt aus Wettkämpfen 19 % USt</field>
-    <field name="code">7004 </field>
+    <field name="code">7004</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8425,7 +8422,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7006 " model="account.account.template">
     <field name="name">Eintritt aus Fußballspielen 19 % USt</field>
-    <field name="code">7006 </field>
+    <field name="code">7006</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8433,7 +8430,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7008 " model="account.account.template">
     <field name="name">Eintritt aus Sportturnieren 19 % USt</field>
-    <field name="code">7008 </field>
+    <field name="code">7008</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8441,7 +8438,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7010 " model="account.account.template">
     <field name="name">Eintritt aus sonstigen Sportveranstaltungen 19 % Ust</field>
-    <field name="code">7010 </field>
+    <field name="code">7010</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8457,7 +8454,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7021 " model="account.account.template">
     <field name="name">Eintrittsgelder aus Sport 1 (19 % USt)</field>
-    <field name="code">7021 </field>
+    <field name="code">7021</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8465,7 +8462,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7022 " model="account.account.template">
     <field name="name">Eintrittsgelder aus Sport 2 (19 % USt)</field>
-    <field name="code">7022 </field>
+    <field name="code">7022</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8481,7 +8478,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7050 " model="account.account.template">
     <field name="name">Einnahmen aus Fußballspielen mit Lizenzspielern</field>
-    <field name="code">7050 </field>
+    <field name="code">7050</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8489,7 +8486,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7052 " model="account.account.template">
     <field name="name">Eintrittsgelder 19 % USt</field>
-    <field name="code">7052 </field>
+    <field name="code">7052</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8497,7 +8494,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7054 " model="account.account.template">
     <field name="name">Einnahmen aus Ablösesummen 19 % Ust</field>
-    <field name="code">7054 </field>
+    <field name="code">7054</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8505,7 +8502,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7100 " model="account.account.template">
     <field name="name">Sonstige Einnahmen Geschäftsbetrieb Sport 3</field>
-    <field name="code">7100 </field>
+    <field name="code">7100</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8513,7 +8510,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7102 " model="account.account.template">
     <field name="name">Anteilige verrechnete Einnahmen</field>
-    <field name="code">7102 </field>
+    <field name="code">7102</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8521,7 +8518,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7104 " model="account.account.template">
     <field name="name">Sonstige Erträge</field>
-    <field name="code">7104 </field>
+    <field name="code">7104</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8537,7 +8534,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7150 " model="account.account.template">
     <field name="name">Einnahmen aus Ablöse bezahlter Sportler 19 % Ust</field>
-    <field name="code">7150 </field>
+    <field name="code">7150</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_revenue"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8545,7 +8542,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7152 " model="account.account.template">
     <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchgewinn) Teilbereich 7000</field>
-    <field name="code">7152 </field>
+    <field name="code">7152</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8553,7 +8550,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7153 " model="account.account.template">
     <field name="name">Anlagenabgänge Sachanlagen (Restbuchwert bei Buchgewinn)</field>
-    <field name="code">7153 </field>
+    <field name="code">7153</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8569,7 +8566,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7160 " model="account.account.template">
     <field name="name">Erträge aus der Auflösung einer steuerlichen Rücklage</field>
-    <field name="code">7160 </field>
+    <field name="code">7160</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_other_income"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8601,7 +8598,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7220 " model="account.account.template">
     <field name="name">Vergütungen an Sportler</field>
-    <field name="code">7220 </field>
+    <field name="code">7220</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8609,7 +8606,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7224 " model="account.account.template">
     <field name="name">Vergütungen i. S. v. ⌡ 67a Abs. 3 Satz 3 AO</field>
-    <field name="code">7224 </field>
+    <field name="code">7224</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8617,7 +8614,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7226 " model="account.account.template">
     <field name="name">Sportvergütungen an Aktive</field>
-    <field name="code">7226 </field>
+    <field name="code">7226</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8625,7 +8622,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7228 " model="account.account.template">
     <field name="name">Sonstige Vergütungen aktive Mitglieder</field>
-    <field name="code">7228 </field>
+    <field name="code">7228</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8633,7 +8630,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7232 " model="account.account.template">
     <field name="name">Personalkosten Trainer, Übungsleiter</field>
-    <field name="code">7232 </field>
+    <field name="code">7232</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8641,7 +8638,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7234 " model="account.account.template">
     <field name="name">Löhne und Gehälter</field>
-    <field name="code">7234 </field>
+    <field name="code">7234</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8649,7 +8646,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7236 " model="account.account.template">
     <field name="name">Aushilfslöhne</field>
-    <field name="code">7236 </field>
+    <field name="code">7236</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8657,7 +8654,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7250 " model="account.account.template">
     <field name="name">Gesetzliche soziale Aufwendungen</field>
-    <field name="code">7250 </field>
+    <field name="code">7250</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8665,7 +8662,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7251 " model="account.account.template">
     <field name="name">Beiträge zur Berufsgenossenschaft</field>
-    <field name="code">7251 </field>
+    <field name="code">7251</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8777,7 +8774,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7306 " model="account.account.template">
     <field name="name">Kilometergelderstattung Arbeitnehmer</field>
-    <field name="code">7306 </field>
+    <field name="code">7306</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8785,7 +8782,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7307 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Fahrtkosten</field>
-    <field name="code">7307 </field>
+    <field name="code">7307</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8793,7 +8790,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7308 " model="account.account.template">
     <field name="name">Sonstiger Reisekostenersatz</field>
-    <field name="code">7308 </field>
+    <field name="code">7308</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8801,7 +8798,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7310 " model="account.account.template">
     <field name="name">Kostenerstattung an Gastmannschaften</field>
-    <field name="code">7310 </field>
+    <field name="code">7310</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8809,7 +8806,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7312 " model="account.account.template">
     <field name="name">Sonstige Vergütungen</field>
-    <field name="code">7312 </field>
+    <field name="code">7312</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8817,7 +8814,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7314 " model="account.account.template">
     <field name="name">Aufwand für andere Vorteile</field>
-    <field name="code">7314 </field>
+    <field name="code">7314</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8825,7 +8822,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7316 " model="account.account.template">
     <field name="name">Gezahlte Preisgelder an bezahlte Sportler</field>
-    <field name="code">7316 </field>
+    <field name="code">7316</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8833,7 +8830,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7318 " model="account.account.template">
     <field name="name">Aufwandsersatz</field>
-    <field name="code">7318 </field>
+    <field name="code">7318</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8841,7 +8838,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7320 " model="account.account.template">
     <field name="name">Anteilige Aufwandspauschale Teilbereich 7000 Geschäftsbetrieb Sport</field>
-    <field name="code">7320 </field>
+    <field name="code">7320</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8849,7 +8846,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7350 " model="account.account.template">
     <field name="name">Sonstige veranstaltungsabhängige Kosten</field>
-    <field name="code">7350 </field>
+    <field name="code">7350</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8857,7 +8854,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7352 " model="account.account.template">
     <field name="name">Reisekostenerstattung an Nichtaktive</field>
-    <field name="code">7352 </field>
+    <field name="code">7352</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8865,7 +8862,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7354 " model="account.account.template">
     <field name="name">Transportkosten</field>
-    <field name="code">7354 </field>
+    <field name="code">7354</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8873,7 +8870,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7356 " model="account.account.template">
     <field name="name">Abgaben</field>
-    <field name="code">7356 </field>
+    <field name="code">7356</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8889,7 +8886,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7380 " model="account.account.template">
     <field name="name">Kosten der Sportanlagen</field>
-    <field name="code">7380 </field>
+    <field name="code">7380</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8897,7 +8894,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7384 " model="account.account.template">
     <field name="name">Miete, Pacht</field>
-    <field name="code">7384 </field>
+    <field name="code">7384</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8905,7 +8902,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7385 " model="account.account.template">
     <field name="name">Strom</field>
-    <field name="code">7385 </field>
+    <field name="code">7385</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8913,7 +8910,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7386 " model="account.account.template">
     <field name="name">Wasser</field>
-    <field name="code">7386 </field>
+    <field name="code">7386</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8921,7 +8918,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7387 " model="account.account.template">
     <field name="name">Gas, Heizung</field>
-    <field name="code">7387 </field>
+    <field name="code">7387</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8929,7 +8926,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7388 " model="account.account.template">
     <field name="name">Reparaturen</field>
-    <field name="code">7388 </field>
+    <field name="code">7388</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8937,7 +8934,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7400 " model="account.account.template">
     <field name="name">Allgemeine Kosten des Sportbetriebs</field>
-    <field name="code">7400 </field>
+    <field name="code">7400</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8945,7 +8942,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7404 " model="account.account.template">
     <field name="name">Verwaltungskosten</field>
-    <field name="code">7404 </field>
+    <field name="code">7404</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8953,7 +8950,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7406 " model="account.account.template">
     <field name="name">Reisekostenerstattung</field>
-    <field name="code">7406 </field>
+    <field name="code">7406</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8961,7 +8958,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7408 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Verpflegungsmehraufwand</field>
-    <field name="code">7408 </field>
+    <field name="code">7408</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8969,7 +8966,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7410 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer</field>
-    <field name="code">7410 </field>
+    <field name="code">7410</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8977,7 +8974,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7411 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Verpflegungsmehraufwand</field>
-    <field name="code">7411 </field>
+    <field name="code">7411</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8985,7 +8982,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7412 " model="account.account.template">
     <field name="name">Kilometergelderstattung Arbeitnehmer</field>
-    <field name="code">7412 </field>
+    <field name="code">7412</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -8993,7 +8990,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7413 " model="account.account.template">
     <field name="name">Reisekosten Arbeitnehmer Fahrtkosten</field>
-    <field name="code">7413 </field>
+    <field name="code">7413</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9001,7 +8998,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7414 " model="account.account.template">
     <field name="name">Versicherungen</field>
-    <field name="code">7414 </field>
+    <field name="code">7414</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9009,7 +9006,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7416 " model="account.account.template">
     <field name="name">Sportkleidung</field>
-    <field name="code">7416 </field>
+    <field name="code">7416</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9017,7 +9014,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7418 " model="account.account.template">
     <field name="name">Ausbildungskostenersatz</field>
-    <field name="code">7418 </field>
+    <field name="code">7418</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9065,7 +9062,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7500 " model="account.account.template">
     <field name="name">Verschiedene Kosten Teilbereich 7000 Geschäftsbetrieb Sport</field>
-    <field name="code">7500 </field>
+    <field name="code">7500</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9073,7 +9070,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7502 " model="account.account.template">
     <field name="name">Verrechnete/aufgeteilte Kosten</field>
-    <field name="code">7502 </field>
+    <field name="code">7502</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9081,7 +9078,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7504 " model="account.account.template">
     <field name="name">Anteilige Umsatzsteuerzahlungen30)</field>
-    <field name="code">7504 </field>
+    <field name="code">7504</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9097,7 +9094,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7508 " model="account.account.template">
     <field name="name">Abziehbare Vorsteuer30)</field>
-    <field name="code">7508 </field>
+    <field name="code">7508</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9105,7 +9102,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7509 " model="account.account.template">
     <field name="name">Nicht abziehbare Vorsteuer</field>
-    <field name="code">7509 </field>
+    <field name="code">7509</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9113,7 +9110,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7510 " model="account.account.template">
     <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchverlust)</field>
-    <field name="code">7510 </field>
+    <field name="code">7510</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9121,7 +9118,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7511 " model="account.account.template">
     <field name="name">Anlagenabgänge Sachanlagen (Restbuchwert bei Buchverlust)</field>
-    <field name="code">7511 </field>
+    <field name="code">7511</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9129,7 +9126,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7512 " model="account.account.template">
     <field name="name">Beiträge an Verbände und sonstige Beiträge</field>
-    <field name="code">7512 </field>
+    <field name="code">7512</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9145,7 +9142,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7514 " model="account.account.template">
     <field name="name">Anteilige Verwaltungskosten</field>
-    <field name="code">7514 </field>
+    <field name="code">7514</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9153,7 +9150,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7516 " model="account.account.template">
     <field name="name">Aufzuteilende Posten Teilbereich 7000 Geschäftsbetrieb Sport</field>
-    <field name="code">7516 </field>
+    <field name="code">7516</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9161,7 +9158,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7517 " model="account.account.template">
     <field name="name">Einstellungen in steuerliche Rücklagen</field>
-    <field name="code">7517 </field>
+    <field name="code">7517</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9169,7 +9166,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7518 " model="account.account.template">
     <field name="name">Ertrag aus Storno Aufwandspauschale - Gegenkonto 3795</field>
-    <field name="code">7518 </field>
+    <field name="code">7518</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9177,7 +9174,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7520 " model="account.account.template">
     <field name="name">Ertrag aus Storno Trainingskosten - Gegenkonto 3795</field>
-    <field name="code">7520 </field>
+    <field name="code">7520</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9449,7 +9446,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7861 " model="account.account.template">
     <field name="name">Anteilige Kostenumlage für Sportstätten</field>
-    <field name="code">7861 </field>
+    <field name="code">7861</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9457,7 +9454,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7869 " model="account.account.template">
     <field name="name">Erlöse aus Verkäufen Sachanlagevermögen (bei Buchverlust)</field>
-    <field name="code">7869 </field>
+    <field name="code">7869</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9465,7 +9462,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7870 " model="account.account.template">
     <field name="name">Verschiedene Kosten Teilbereich 7800 Geschäftsbetriebe Nebentätigkeiten Sport</field>
-    <field name="code">7870 </field>
+    <field name="code">7870</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9473,7 +9470,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7871 " model="account.account.template">
     <field name="name">Verrechnete/aufgeteilte Kosten TB 7800</field>
-    <field name="code">7871 </field>
+    <field name="code">7871</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9481,7 +9478,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7872 " model="account.account.template">
     <field name="name">Anlagenabgänge Sachanlagen (Restbuchwert bei Buchverlust)</field>
-    <field name="code">7872 </field>
+    <field name="code">7872</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9489,7 +9486,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7873 " model="account.account.template">
     <field name="name">Rechts- und Beratungskosten</field>
-    <field name="code">7873 </field>
+    <field name="code">7873</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9497,7 +9494,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7874 " model="account.account.template">
     <field name="name">Einstellungen in steuerliche Rücklagen</field>
-    <field name="code">7874 </field>
+    <field name="code">7874</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9505,7 +9502,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7875 " model="account.account.template">
     <field name="name">Anteilige Umsatzsteuerzahlungen30)</field>
-    <field name="code">7875 </field>
+    <field name="code">7875</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9513,7 +9510,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7876 " model="account.account.template">
     <field name="name">Aufzuteilende Vorsteuer30)</field>
-    <field name="code">7876 </field>
+    <field name="code">7876</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9521,7 +9518,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7877 " model="account.account.template">
     <field name="name">Abziehbare Vorsteuer30)</field>
-    <field name="code">7877 </field>
+    <field name="code">7877</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9529,7 +9526,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7878 " model="account.account.template">
     <field name="name">Nicht abziehbare Vorsteuer</field>
-    <field name="code">7878 </field>
+    <field name="code">7878</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9537,7 +9534,7 @@ Arbeitnehmer </field>
   </record>
   <record id="chart_skr49_7879 " model="account.account.template">
     <field name="name">Aufzuteilende Posten Teilbereich 7800 Geschäftsbetriebe Nebentätigkeiten Sport</field>
-    <field name="code">7879 </field>
+    <field name="code">7879</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
     <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
@@ -9977,7 +9974,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_051'), ref('account_tag_skr49_234'), ref('account_tag_skr49_009')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_8174" model="account.account.template">
-    <field name="name">Erhaltene Skonti </field>
+    <field name="name">Erhaltene Skonti</field>
     <field name="code">8174</field>
     <field eval="False" name="reconcile"/>
     <field eval="True" name="deprecated"/>
@@ -10418,7 +10415,7 @@ Arbeitnehmer </field>
     <field eval="[(6,0,[ref('account_tag_skr49_222'), ref('account_tag_skr49_009')])]" name="tag_ids"/>
   </record>
   <record id="chart_skr49_8480" model="account.account.template">
-    <field name="name">Sonstige Steuern </field>
+    <field name="name">Sonstige Steuern</field>
     <field name="code">8480</field>
     <field eval="False" name="reconcile"/>
     <field name="user_type_id" ref="account.data_account_type_expenses"/>
