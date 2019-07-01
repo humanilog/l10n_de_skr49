@@ -10,7 +10,7 @@ Dieses Modul beinhaltet einen deutschen Kontenrahmen basierend auf dem SKR49.
 
 German accounting chart and localization for the SKR49.
   """,
-    'depends': ['l10n_de'],
+    'depends': ['account'],
     'data': [
         'data/account_account_tags_data.xml',
         'data/account_chart.xml',
